@@ -28,8 +28,13 @@ jobs:
           source venv/bin/activate
       
       - name: Install dependencies
-        run: pip install -r requirments.txt
-        
+        run: |
+         pip install -r requirments.txt
+         pip install langchain_community
+         pip install langchain-community
+         pip install -U sentence-transformers
+         pip install pypdf
+         
       # Optional: Add step to run tests here (PyTest, Django test suites, etc.)
 
       - name: Zip artifact for deployment
