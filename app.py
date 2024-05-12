@@ -5,7 +5,6 @@ from langchain_community.document_loaders import PyPDFLoader
 from langchain_community.embeddings import SentenceTransformerEmbeddings
 from langchain_pinecone import PineconeVectorStore
 from langchain.text_splitter import RecursiveCharacterTextSplitter
-from waitress import serve
 app = Flask(__name__)
 
 UPLOAD_FOLDER = 'uploads'
@@ -16,8 +15,6 @@ if not os.path.exists(UPLOAD_FOLDER):
 
 app.config['UPLOAD_FOLDER'] = UPLOAD_FOLDER
 
-# Initialize Pinecone client
-import pinecone
 
 os.environ['HF_HUB_DISABLE_SYMLINKS_WARNING'] = '1'
 os.environ['PINECONE_API_KEY'] = 'a232fcba-5aff-46bf-ac24-daa531663d11'
