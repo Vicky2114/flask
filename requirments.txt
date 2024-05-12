@@ -17,9 +17,6 @@ Jinja2==3.1.4
 jsonpatch==1.33
 jsonpointer==2.4
 langchain==0.1.20
-langchain-community==0.0.38
-langchain-core==0.1.52
-langchain-pinecone==0.1.0
 langchain-text-splitters==0.0.1
 langsmith==0.1.57
 MarkupSafe==2.1.5
@@ -43,3 +40,7 @@ urllib3==2.2.1
 Werkzeug==3.0.3
 wheel==0.42.0
 yarl==1.9.4
+langchain_community==0.0.38
+langchain_core==0.1.52
+langchain_pinecone==0.1.0
+langchain_text_splitters==0.0.1
